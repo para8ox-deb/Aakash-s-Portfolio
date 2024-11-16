@@ -2,24 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global reset for html and body */
+/* Reset margins and padding, and ensure full screen height */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    background-color: #1f2937; /* The background color for your site */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
-  /* Optionally, add a smooth scroll behavior */
-  * {
-    box-sizing: border-box;
-  }
-  
+  /* Prevent extra height being added */
   body {
+    min-height: 100vh; /* This ensures the body takes at least 100% of the viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align the content */
+  }
+  
+  /* Ensure content fills and no extra space */
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+
+  .scrollable {
+    overflow-y: auto;
+    max-height: calc(100vh - 100px); /* Adjust based on header height or other spacing */
   }
   
