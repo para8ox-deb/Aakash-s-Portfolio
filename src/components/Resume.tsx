@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { Mail, MapPin, Calendar, Github, Linkedin, Twitter } from 'lucide-react';
+
 export default function Resume() {
   return (
     <article className="bg-gray-800 rounded-lg p-6">
@@ -10,7 +13,7 @@ export default function Resume() {
         <h3 className="text-2xl font-semibold text-amber-500 mb-6 animate__animated animate__fadeIn">
           Education
         </h3>
-        
+
         <div className="space-y-8">
           <div className="transition-all duration-500 transform hover:scale-105 hover:bg-gray-900/50 p-4 rounded-lg">
             <h4 className="text-xl font-semibold text-white">Vellore Institute of Technology, Chennai</h4>
@@ -34,8 +37,8 @@ export default function Resume() {
       </div>
 
       {/* Skills Section */}
-      <div className="animate__animated animate__fadeIn">
-        <h3 className="text-2xl font-semibold text-amber-500 mb-8 animate__animated animate__fadeIn">
+      <div className="mb-12 animate__animated animate__fadeIn">
+        <h3 className="text-2xl font-semibold text-amber-500 mb-6">
           Skills
         </h3>
 
@@ -88,10 +91,61 @@ export default function Resume() {
         </div>
       </div>
 
+      {/* Positions of Responsibility Section */}
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold text-amber-500 mb-6 animate__animated animate__fadeIn">
+          Positions of Responsibility
+        </h3>
+
+        <div className="space-y-8">
+          <div className="transition-all duration-500 transform hover:scale-105 hover:bg-gray-900/50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold text-white">DAC (Data Analytics Club)</h4>
+            <p className="text-amber-500">Tech Member (2021 - 2022)</p>
+            <p className="text-gray-300">
+              ● Contributed to the website creation of the club. Worked on the frontend using React JS.
+            </p>
+          </div>
+
+          <div className="transition-all duration-500 transform hover:scale-105 hover:bg-gray-900/50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold text-white">Linux Club</h4>
+            <p className="text-amber-500">Tech Member (2022 - 2023)</p>
+            <p className="text-gray-300">
+              ● Hosted the club event website on Amazon AWS.<br />
+              ● Installed Linux on students' systems, Managed events such as Password, HackersHorizon, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Certifications Section */}
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold text-amber-500 mb-6 animate__animated animate__fadeIn">
+          Certifications & Achievements
+        </h3>
+
+        <div className="space-y-8">
+          <div className="transition-all duration-500 transform hover:scale-105 hover:bg-gray-900/50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold text-white">Certifications</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li>CDL (Cloud Digital Leader)</li>
+              <li>GCCF (Google Cloud Computing Foundations Program)</li>
+            </ul>
+          </div>
+
+          <div className="transition-all duration-500 transform hover:scale-105 hover:bg-gray-900/50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold text-white">Extracurricular Achievements</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li>5 stars in C++, Java, and Python on HackerRank.</li>
+              <li>Currently practicing LeetCode for Data Structures and Algorithms.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* Download Resume Button */}
       <div className="mt-8 text-center animate__animated animate__fadeIn">
-        <a 
-          href="/src/resume/resume.pdf" 
+        <a
+          href="/src/resume/resume.pdf"
           download="Aakash_Kumar_Resume"
           className="inline-block px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-600 transition-all duration-300 transform hover:scale-105"
         >

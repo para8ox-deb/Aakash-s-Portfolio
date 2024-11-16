@@ -16,7 +16,7 @@ function App() {
         
         <div className="flex-1">
           <nav className="bg-gray-800 rounded-lg mb-6">
-            <ul className="flex justify-center md:justify-start gap-4 p-4">
+            <ul className="flex flex-wrap justify-center md:justify-start gap-4 p-4">
               <li>
                 <button 
                   onClick={() => setActiveTab('about')}
@@ -38,7 +38,7 @@ function App() {
                   onClick={() => setActiveTab('portfolio')}
                   className={`px-4 py-2 rounded transition ${activeTab === 'portfolio' ? 'bg-amber-500 text-gray-900' : 'hover:bg-gray-700'}`}
                 >
-                  Portfolio
+                  Projects
                 </button>
               </li>
               <li>
