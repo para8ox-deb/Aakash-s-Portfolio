@@ -10,7 +10,9 @@ function App() {
   const [activeTab, setActiveTab] = useState('about')
 
   return (
-    <main className="min-h-screen bg-gray-900 text-gray-100 py-4 px-4 md:py-8">
+    <div className="min-h-screen bg-gray-800">
+    {
+      <main className="min-h-screen bg-gray-900 text-gray-100 py-4 px-4 md:py-8">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6">
         <Sidebar />
         
@@ -59,6 +61,8 @@ function App() {
         </div>
       </div>
     </main>
+    }
+  </div>
   )
 }
 
