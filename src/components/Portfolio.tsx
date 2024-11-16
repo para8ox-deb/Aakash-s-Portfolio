@@ -37,7 +37,7 @@ export default function Portfolio() {
   return (
     <article className="bg-gray-800 rounded-lg p-6">
       <h2 className="text-3xl font-bold mb-8 pb-2 border-b border-gray-700 text-amber-500 transition-transform duration-300 transform hover:scale-105">
-        Portfolio
+        Projects
       </h2>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
