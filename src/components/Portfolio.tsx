@@ -36,7 +36,7 @@ export default function Portfolio() {
 
   return (
     <article className="bg-gray-800 rounded-lg p-6">
-      <h2 className="text-3xl font-bold mb-8 pb-2 border-b border-gray-700 text-amber-500">
+      <h2 className="text-3xl font-bold mb-8 pb-2 border-b border-gray-700 text-amber-500 transition-transform duration-300 transform hover:scale-105">
         Portfolio
       </h2>
 
@@ -44,7 +44,7 @@ export default function Portfolio() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-900/50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+            className="bg-gray-900/50 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
           >
             <div className="relative">
               <img
