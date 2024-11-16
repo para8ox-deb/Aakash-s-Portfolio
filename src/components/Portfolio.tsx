@@ -4,7 +4,7 @@ export default function Portfolio() {
       title: 'Face Recognition-Based Attendance System',
       category: 'AI and Automation',
       tech: 'Python, Flask, dLib',
-      image: 'src/images/projects/faceRecognitionSystem.png',
+      image: 'public/images/projects/faceRecognitionSystem.png',
       demo: '#', // Add the demo link if available
       code: 'https://github.com/para8ox-deb/Face-Recognition-Attendance-System',
     },
@@ -12,7 +12,7 @@ export default function Portfolio() {
       title: 'Garbage Collector Robot',
       category: 'IoT and Robotics',
       tech: 'Sensors, Robotics Arm',
-      image: 'src/images/projects/garbageCollector.jpg',
+      image: 'public/images/projects/garbageCollector.jpg',
       demo: '#', // Add the demo link if available
       code: 'https://github.com/para8ox-deb/GarbageCollectorRobot',
     },
@@ -20,7 +20,7 @@ export default function Portfolio() {
       title: 'Voting App',
       category: 'Backend Development',
       tech: 'Node.js, Express.js, MongoDB',
-      image: 'src/images/projects/votingApplication.png',
+      image: 'public/images/projects/votingApplication.png',
       demo: '#', // Add the demo link if available
       code: 'https://github.com/para8ox-deb/VotingApp',
     },
@@ -28,7 +28,7 @@ export default function Portfolio() {
       title: 'MemeGenerator Application',
       category: 'Desktop Application',
       tech: 'Python, Tkinter, Reddit API',
-      image: 'src/images/projects/memeGenerator.png',
+      image: 'public/images/projects/memeGenerator.png',
       demo: '#', // Add the demo link if available
       code: 'https://github.com/para8ox-deb/MemeGenerator',
     },
