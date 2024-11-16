@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="text-center">
         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
           <img 
-            src="src\images\Aakash.jpg" 
+            src="/images/logo/Aakash.jpg" 
             alt="Aakash Kumar"
             className="w-full h-full object-cover"
           />
